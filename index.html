@@ -2,14 +2,75 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Monitor CND</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <input type="button" value="Consultar Configuração" />
+    
+    <fieldset>
+      <legend>Status Serviço CND</legend>
+      <input type="checkbox" />
+      <label>Ativação automática do serviço</label>
+      <label>Tempo</label>
+      <input type="datetime" />
+      <input type="button" value="Ativar Serviço" />
+      <label id="lblStatusServico">Serviço Ativo/Inativo</label>
+    </fieldset>
+
+    <label>Ukey (Ukey da configuração)</label>
+    <input />
+    
+    <label>Timestamp (Data e hora da última atualização)</label>
+    <input />
+    
+    <label>Cia_Ukey (Ukey da Empresa)</label>
+    <input />
+    
+    <label>Ts0001_001c (Nome do LOG que será identificado no EventViewer do Windows)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+
+    <label>Ts0001_002n (Tempo de espera de cada requisição em segundos)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_003n (Quantidade de tentativas que o serviço irá fazer antes de finalizar a requisição)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_004c (ID do cliente que tem permissão para consultar o serviço do captcha)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_005n (Timeout da requisição feita em cada consulta nos órgãos)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_006n (Órgãos que irão utilizar o proxy separado por ",")</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_007c (URL do proxy que será acessado)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_008n (Porta do proxy que será acessado)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
+    <label>Ts0001_009n (Permissão para imprimir o arquivo PDF da reqsuiição: 0 = não imprimir / 1 = imprimir. Local onde será impresso os documentos: C:\_Dynamicca\)</label>
+    <input type="text" />
+    <input type="checkbox" />
+    <label>Editar</label>
+    
 
     <script>
       // You can also require other files to run in this process
